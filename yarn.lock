@@ -2834,10 +2834,9 @@ shebang-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
 
-shieldman@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/shieldman/-/shieldman-1.4.0.tgz#ef325beab7c34b48ba6bab4f8b2b674f74166c73"
-  integrity sha512-wnaqLmbwHOkG72+CpKfuBQMth2yEYpn0X0/wwuaGovycRIFPuT00BD0PwOeMRv44LOwEJpNTfG4vbDtT2Ap+tg==
+shieldman@dword-design/shieldman#fork:
+  version "0.0.0-placeholder"
+  resolved "https://codeload.github.com/dword-design/shieldman/tar.gz/46a015e122bb459e0bdb0374b06322622e0bf9f5"
 
 signal-exit@^3.0.0:
   version "3.0.2"
