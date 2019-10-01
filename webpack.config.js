@@ -1,5 +1,6 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const ZipWebpackPlugin = require('zip-webpack-plugin')
 const nodeEnv = require('@dword-design/node-env')
 
 module.exports = {
@@ -15,5 +16,9 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin(['static'], { copyUnmodified: true }),
+    new ZipWebpackPlugin({
+      path: '..',
+      filename: 'dist.zip',
+    }),
   ],
 }
