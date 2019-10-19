@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack --watch",
-    "prepublishOnly": "webpack",
+    "prepare": "webpack",
     "deploy": "NODE_ENV=production npm run prepublishOnly"
   },
   "devDependencies": {
