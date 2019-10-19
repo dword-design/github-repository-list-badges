@@ -16,9 +16,13 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin(['static'], { copyUnmodified: true }),
-    new ZipWebpackPlugin({
-      path: '..',
-      filename: 'dist.zip',
-    }),
+    ...nodeEnv === 'production'
+     ? [
+       new ZipWebpackPlugin({
+        path: '..',
+        filename: 'dist.zip',
+      }),
+    ]
+    : [],
   ],
 }
