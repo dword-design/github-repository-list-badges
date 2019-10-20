@@ -818,6 +818,14 @@
     webpack-cli "^3.3.9"
     zip-webpack-plugin "^3.0.0"
 
+"@dword-design/base-plugin-config-files@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-plugin-config-files/-/base-plugin-config-files-1.1.0.tgz#0eaac9751daeee49536c7a61bd55ab82169a1122"
+  integrity sha512-vKHjFcsna/WrDzocuAyTYdDOEOUstbQ7Ne/3jUuy9zBooZKcGzHhD/TwHIkgqMMJyklNIBzIZkakBEqiT/Qitg==
+  dependencies:
+    "@dword-design/config-files" "^1.0.2"
+    fs-extra "^8.1.0"
+
 "@dword-design/base@^0.13.8":
   version "0.13.8"
   resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-0.13.8.tgz#408adea4004fba45fdee495b0bc045fc2f70b27e"
@@ -837,6 +845,15 @@
     read-pkg-up "^6.0.0"
     resolve-dep "^0.6.0"
     safe-readfile "^1.0.2"
+
+"@dword-design/config-files@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@dword-design/config-files/-/config-files-1.0.2.tgz#4deeae7cefafc727a0e2c2becd609bd1cf67d288"
+  integrity sha512-JXhw+Vq6dUDpt35EybUISUC0nb/W5lCdKTJYnlpAOokCLtLlhkABJhgB3A2XShULwLCLSWzdqfmihsukP7Q1tQ==
+  dependencies:
+    "@dword-design/functions" "^0.7.2"
+    fs-extra "^8.1.0"
+    pipe-fns "^1.0.1"
 
 "@dword-design/eslint-config-fp@^1.0.3":
   version "1.0.3"
