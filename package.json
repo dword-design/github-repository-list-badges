@@ -8,18 +8,10 @@
   "scripts": {
     "prepare": "base build"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": "eslint"
-  },
   "devDependencies": {
-    "@dword-design/base": "^0.13.8",
+    "@dword-design/base": "^0.14.1",
     "@dword-design/base-lang-fp": "^1.0.0",
-    "@dword-design/base-plugin-chrome-extension": "^1.0.1",
+    "@dword-design/base-plugin-chrome-extension": "^1.0.2",
     "@dword-design/base-plugin-config-files": "^1.1.0"
   },
   "dependencies": {

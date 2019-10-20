@@ -803,10 +803,10 @@
     "@dword-design/babel-preset-fp" "^1.0.2"
     "@dword-design/eslint-config-fp" "^1.0.3"
 
-"@dword-design/base-plugin-chrome-extension@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-plugin-chrome-extension/-/base-plugin-chrome-extension-1.0.1.tgz#cad1df0ca31b0ac4b160856ca81d8904ae29ed17"
-  integrity sha512-8nD1vagO4schM9We7N/3yNQrEfWkRp4YPPvwuMoO4ibDjwDz1h7z300UuVSkItvA7F4v2R/JcnsNe1ywdwVsRw==
+"@dword-design/base-plugin-chrome-extension@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-plugin-chrome-extension/-/base-plugin-chrome-extension-1.0.2.tgz#f4d58f8c91310fbf0dbd41ab3a5f20fc5c1bb52b"
+  integrity sha512-lEFhmM4aQx6fkFgR1PPB0x/S/uWe5DXtH3U40LrPMViaYA042wWc8QOZAWqJek7pcE6klnnyq5ATilqDRcUHLw==
   dependencies:
     "@babel/core" "^7.6.4"
     babel-loader "^8.0.6"
@@ -826,10 +826,10 @@
     "@dword-design/config-files" "^1.0.2"
     fs-extra "^8.1.0"
 
-"@dword-design/base@^0.13.8":
-  version "0.13.8"
-  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-0.13.8.tgz#408adea4004fba45fdee495b0bc045fc2f70b27e"
-  integrity sha512-vaBOB95fKUirzttQl4HlFjv2mmab9zTjNWLAkNxWlua3BFMNDinl6xeAqSQgu7hQaw6w1Ld/sBn0T2O5YHfirQ==
+"@dword-design/base@^0.14.1":
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-0.14.1.tgz#44efb70caaf589fd3981ee75af50333961c64e75"
+  integrity sha512-a9IIKS2+WcKouggoXqRKyCLXZgPxyIULcNX19OYglpRVDbK5vFvPCkY/STivipUzXmjXOrs9A+CRRxa29MtsQg==
   dependencies:
     "@dword-design/functions" "^0.6.0"
     "@dword-design/node-env" "^0.1.0"
