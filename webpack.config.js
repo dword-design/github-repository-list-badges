@@ -25,4 +25,17 @@ module.exports = {
     ]
     : [],
   ],
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@dword-design/fp'],
+          }
+        }
+      }
+    ],
+  },
 }
