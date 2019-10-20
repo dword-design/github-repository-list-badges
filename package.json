@@ -1,21 +1,12 @@
 {
-  "name": "chrome-extension-github-better-repository-list",
+  "name": "@dword-design/chrome-extension-github-better-repository-list",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "repository": "git@github.com:dword-design/chrome-extension-github-better-repository-list.git",
+  "repository": "https://github.com/dword-design/chrome-extension-github-better-repository-list",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --watch",
-    "prepare": "webpack",
-    "lint": "eslint .",
-    "deploy": "NODE_ENV=production npm run prepare"
-  },
-  "eslintConfig": {
-    "extends": "@dword-design/fp",
-    "env": {
-      "webextensions": true
-    }
+    "prepare": "base build"
   },
   "husky": {
     "hooks": {
@@ -26,19 +17,9 @@
     "*.js": "eslint"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@dword-design/eslint-config-fp": "^1.0.3",
-    "@dword-design/node-env": "^0.1.0",
-    "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.0.4",
-    "eslint": "^6.5.1",
-    "husky": "^3.0.9",
-    "lint-staged": "^9.4.2",
-    "rimraf": "^3.0.0",
-    "webpack": "^4.41.0",
-    "webpack-cli": "^3.3.9",
-    "zip-webpack-plugin": "^3.0.0"
+    "@dword-design/base": "^0.13.8",
+    "@dword-design/base-lang-fp": "^1.0.0",
+    "@dword-design/base-plugin-chrome-extension": "^1.0.1"
   },
   "dependencies": {
     "axios": "^0.19.0",
