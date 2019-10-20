@@ -1,13 +1,10 @@
-const $ = require('jquery')
-const shieldman = require('shieldman')
-const GitHub = require('github-api')
-const axios = require('axios')
+import $ from 'jquery'
+import shieldman from 'shieldman'
+import GitHub from 'github-api'
 
 const token = '0c6062e4e326c10ced6d3a8ad34ac66ab2b8a8fa'
 
-const github = new GitHub({
-  token: '0c6062e4e326c10ced6d3a8ad34ac66ab2b8a8fa',
-})
+const github = new GitHub({ token })
 
 const userName = window.location.href.match(/github\.com\/(.*?)\?/)[1]
 const $containers = $('#user-repositories-list h3').parent().parent()

@@ -6,10 +6,10 @@ chrome.runtime.onInstalled.addListener(() => {
         conditions: [
           new chrome.declarativeContent.PageStateMatcher({
             pageUrl: { hostEquals: 'github.com', queryContains: 'tab=repositories' },
-          })
+          }),
         ],
-        actions: [new chrome.declarativeContent.ShowPageAction()]
-      }
+        actions: [new chrome.declarativeContent.ShowPageAction()],
+      },
     ])
   })
 })
