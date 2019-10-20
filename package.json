@@ -11,7 +11,7 @@
   "devDependencies": {
     "@dword-design/base": "^0.14.1",
     "@dword-design/base-lang-fp": "^1.0.0",
-    "@dword-design/base-plugin-chrome-extension": "^1.0.2",
+    "@dword-design/base-plugin-chrome-extension": "^1.1.0",
     "@dword-design/base-plugin-config-files": "^1.1.0"
   },
   "dependencies": {
