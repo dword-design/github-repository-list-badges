@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "prepare": "base-chrome-extension prepare",
-    "start": "base-chrome-extension start"
+    "start": "base-chrome-extension start",
+    "test": "base-chrome-extension test"
   },
   "devDependencies": {
     "@dword-design/base-chrome-extension": "^0.1.2"
