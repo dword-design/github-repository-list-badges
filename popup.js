@@ -7,8 +7,7 @@ chrome.storage.sync.get('color', data => {
 
 changeColor.onclick = element =>
   chrome.tabs.query({ active: true, currentWindow: true }, tabs =>
-    chrome.tabs.executeScript(
-      tabs[0].id,
-      { code: `document.body.style.backgroundColor = "${element.target.value}";` }
-    )
+    chrome.tabs.executeScript(tabs[0].id, {
+      code: `document.body.style.backgroundColor = "${element.target.value}";`,
+    })
   )

@@ -1,22 +1,33 @@
 {
   "name": "@dword-design/chrome-extension-github-better-repository-list",
   "version": "1.0.1",
-  "main": "dist/index.js",
   "private": true,
-  "repository": "https://github.com/dword-design/chrome-extension-github-better-repository-list",
-  "author": "Sebastian Landwehr <info@dword-design.de>",
+  "description": "",
+  "repository": "dword-design/chrome-extension-github-better-repository-list",
   "license": "MIT",
+  "author": "Sebastian Landwehr <info@dword-design.de>",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "prepare": "base-chrome-extension prepare",
-    "start": "base-chrome-extension start",
-    "test": "base-chrome-extension test"
-  },
-  "devDependencies": {
-    "@dword-design/base-chrome-extension": "^0.1.2"
+    "commit": "base commit",
+    "dev": "base dev",
+    "prepare": "base prepare",
+    "prepublishOnly": "base prepublishOnly",
+    "test": "base test"
   },
   "dependencies": {
     "github-api": "^3.3.0",
     "jquery": "^3.4.1",
     "shieldman": "dword-design/shieldman#fork"
-  }
+  },
+  "devDependencies": {
+    "@dword-design/base": "^6.10.2",
+    "@dword-design/base-config-chrome-extension": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "baseConfig": "chrome-extension"
 }

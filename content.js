@@ -10,25 +10,45 @@ const userName = window.location.href.match(/github\.com\/(.*?)\?/)[1]
 const $containers = $('#user-repositories-list h3').parent().parent()
 
 $containers.each(function () {
-  (async () => {
+  ;(async () => {
     const $headlineContainer = $(this).find('h3').parent()
     const repositoryName = $headlineContainer.find('a').text().trim()
     const repository = github.getRepo(userName, repositoryName)
 
     try {
       const [{ name: packageName }, readme] = await Promise.all([
-        repository.getContents(undefined, 'package.json').then(({ data: { content, encoding } }) => JSON.parse(Buffer.from(content, encoding).toString())),
-        repository.getReadme().then(({ data: { content, encoding } }) => Buffer.from(content, encoding).toString()),
+        repository
+          .getContents(undefined, 'package.json')
+          .then(({ data: { content, encoding } }) =>
+            JSON.parse(Buffer.from(content, encoding).toString())
+          ),
+        repository
+          .getReadme()
+          .then(({ data: { content, encoding } }) =>
+            Buffer.from(content, encoding).toString()
+          ),
       ])
 
       const shieldMatch = readme.match(/<!--@shields\((.*)\)-->/) || undefined
-      const shieldNames = shieldMatch !== undefined
-        ? shieldMatch[1].split(/,\s*/).map(part => part.substr(1, part.length - 2))
-        : []
+      const shieldNames =
+        shieldMatch !== undefined
+          ? shieldMatch[1]
+              .split(/,\s*/)
+              .map(part => part.substr(1, part.length - 2))
+          : []
 
       const shieldsHtml = shieldNames
-        .map(shieldName => shieldman(shieldName, { npmName: packageName, repo: `${userName}/${repositoryName}`, branch: 'master' }))
-        .map(({ link, text, image }) => `<a href="${link}"><img alt="${text}" src="${image}"></a>`)
+        .map(shieldName =>
+          shieldman(shieldName, {
+            npmName: packageName,
+            repo: `${userName}/${repositoryName}`,
+            branch: 'master',
+          })
+        )
+        .map(
+          ({ link, text, image }) =>
+            `<a href="${link}"><img alt="${text}" src="${image}"></a>`
+        )
         .join(' ')
 
       $(`<div>${shieldsHtml}</div>`).insertAfter($headlineContainer)
