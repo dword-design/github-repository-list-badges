@@ -18,16 +18,19 @@
     "test": "base test"
   },
   "dependencies": {
-    "github-api": "^3.3.0",
-    "jquery": "^3.4.1",
-    "shieldman": "dword-design/shieldman#fork"
+    "@dword-design/functions": "^1.1.2",
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3"
   },
   "devDependencies": {
     "@dword-design/base": "^6.10.2",
-    "@dword-design/base-config-chrome-extension": "^1.0.0"
+    "@dword-design/base-config-web-extension": "^1.2.1"
   },
   "publishConfig": {
     "access": "public"
   },
-  "baseConfig": "chrome-extension"
+  "baseConfig": {
+    "name": "web-extension",
+    "startUrl": "https://github.com/dword-design?tab=repositories"
+  }
 }
