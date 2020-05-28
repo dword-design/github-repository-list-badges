@@ -4,7 +4,13 @@
   "version": "1.0",
   "manifest_version": 2,
   "permissions": [
+<<<<<<< HEAD
     "https://api.github.com/*"
+=======
+    "activeTab",
+    "declarativeContent",
+    "storage"
+>>>>>>> d74b62ed6639eab2a33b49032b24e411a72e6d67
   ],
   "page_action": {
     "default_popup": "popup.html",
@@ -31,5 +37,15 @@
         "https://github.com/*?*tab=repositories"
       ]
     }
+<<<<<<< HEAD
   ]
+=======
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  }
+>>>>>>> d74b62ed6639eab2a33b49032b24e411a72e6d67
 }
