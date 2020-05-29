@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/dword-design/github-better-repository-list/compare/v1.0.1...v1.0.2) (2020-05-29)
+
+
+### Bug Fixes
+
+* upgrades ([feb8a79](https://github.com/dword-design/github-better-repository-list/commit/feb8a79ca9f1e7db80104e46999539ec8dff22d0))
+
 ## [1.0.1](https://github.com/dword-design/github-better-repository-list/compare/v1.0.0...v1.0.1) (2020-05-29)
 
 
