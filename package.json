@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "",
-  "repository": "dword-design/chrome-extension-github-better-repository-list",
+  "repository": "dword-design/github-better-repository-list",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "main": "dist/index.js",
