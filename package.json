@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@dword-design/base": "^6.10.2",
-    "@dword-design/base-config-web-extension": "^1.2.1"
+    "@dword-design/base-config-web-extension": "^1.5.0"
   },
   "publishConfig": {
     "access": "public"

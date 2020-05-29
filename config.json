@@ -1,0 +1,9 @@
+{
+  "name": "GitHub Better Repository List",
+  "permissions": [
+    "https://api.github.com/*"
+  ],
+  "matches": [
+    "https://github.com/*?*tab=repositories"
+  ]
+}
