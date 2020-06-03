@@ -67,7 +67,8 @@ export default (error, repositoryName) => {
     $flashButton.type = 'button'
     $flashButton.style.padding = '16px 40px'
     $flashButton.classList.add('btn-link', 'text-orange', 'bg-red-light')
-    $flashButton.innerText = 'Add a GitHub access token'
+    $flashButton.innerText =
+      'Add a GitHub access token for Repository List Badges'
     $flash.append($flashButton)
     $flashButton.onclick = () => {
       const $dialog = showDialog()

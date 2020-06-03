@@ -3,7 +3,7 @@ import cheerio from 'cheerio'
 import axios from 'axios'
 import micromatch from 'micromatch'
 import handleError from './handle-error'
-import { TOKEN_KEY } from './constants'
+import { TOKEN_KEY, BADGES_CLASS } from './constants'
 import badgeMatches from './badge-matches.json'
 
 import waitForImage from './wait-for-image'
@@ -12,13 +12,10 @@ const token = localStorage.getItem(TOKEN_KEY)
 const userName = window.location.href.match(/github\.com\/(.*?)\?/)[1]
 const github = axios.create({ baseURL: 'https://api.github.com' })
 
-export default async $headline => {
-  const $headlineContainer = $headline.parentNode
-  const $repository = $headlineContainer.parentNode
-  const repositoryName = $headline.querySelector('a').textContent.trim()
+export default async name => {
   try {
     const readme =
-      github.get(`/repos/${userName}/${repositoryName}/readme`, {
+      github.get(`/repos/${userName}/${name}/readme`, {
         headers: {
           ...(token && { Authorization: `token ${token}` }),
           Accept: 'application/vnd.github.v3.html',
@@ -26,15 +23,10 @@ export default async $headline => {
       })
       |> await
       |> property('data')
-    let $badges = $repository.querySelector(
-      '.github-better-repository-list-badges'
-    )
-    if ($badges) {
-      $badges.remove()
-    }
-    $badges = document.createElement('div')
-    $badges.classList.add('github-better-repository-list-badges')
+
     const $ = cheerio.load(readme)
+    const $badges = document.createElement('div')
+    $badges.classList.add(BADGES_CLASS)
     $badges.innerHTML = $('img')
       .filter(
         (imageIndex, img) =>
