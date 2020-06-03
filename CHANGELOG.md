@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/dword-design/github-repository-list-badges/compare/v1.3.0...v1.3.1) (2020-06-03)
+
+
+### Bug Fixes
+
+* fix errors ([d7dea8b](https://github.com/dword-design/github-repository-list-badges/commit/d7dea8b2829010d552716295dd0c89fe3804373c))
+* fix name ([324f41d](https://github.com/dword-design/github-repository-list-badges/commit/324f41d5019c0f12e2e2a54f456f37b37682049a))
+
 # [1.3.0](https://github.com/dword-design/github-repository-list-badges/compare/v1.2.0...v1.3.0) (2020-06-03)
 
 
