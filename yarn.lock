@@ -1111,6 +1111,13 @@
     "@babel/core" "^7.7.7"
     fs-extra "^9.0.0"
 
+"@dword-design/github-extension-utils@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@dword-design/github-extension-utils/-/github-extension-utils-1.0.0.tgz#e1ebcacb646fb9a70086905f71daec804e9e552b"
+  integrity sha512-A+GsBWn7M1nddZ8zJ1RO+yfb2Q0RT1vaBbwctOivwZtH2OAWm+c7AYnt37zbsenOO7p5R1+SUF6xDc1nlIT9Gw==
+  dependencies:
+    "@dword-design/functions" "^1.1.2"
+
 "@glimmer/env@0.1.7":
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/@glimmer/env/-/env-0.1.7.tgz#fd2d2b55a9029c6b37a6c935e8c8871ae70dfa07"
