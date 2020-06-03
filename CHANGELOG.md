@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/dword-design/github-repository-list-badges/compare/v1.0.3...v1.1.0) (2020-06-03)
+
+
+### Features
+
+* refactoring ([3ca2440](https://github.com/dword-design/github-repository-list-badges/commit/3ca2440e0b6ba2f63bfc133ad4a4fe97ab0624c9))
+
 ## [1.0.3](https://github.com/dword-design/github-better-repository-list/compare/v1.0.2...v1.0.3) (2020-06-02)
 
 
