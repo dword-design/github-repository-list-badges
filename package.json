@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "private": true,
   "description": "",
-  "repository": "dword-design/github-better-repository-list",
+  "repository": "dword-design/github-repository-list-badges",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "main": "dist/index.js",
@@ -20,7 +20,8 @@
   "dependencies": {
     "@dword-design/functions": "^1.1.2",
     "axios": "^0.19.2",
-    "cheerio": "^1.0.0-rc.3"
+    "cheerio": "^1.0.0-rc.3",
+    "micromatch": "^4.0.2"
   },
   "devDependencies": {
     "@dword-design/base": "^6.10.2",

@@ -3194,12 +3194,7 @@ ci-info@^1.5.0, ci-info@^1.6.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.6.0.tgz#2ca20dbb9ceb32d4524a683303313f0304b1e497"
   integrity sha512-vsGdkwSCDpWmP80ncATX7iea5DWQemg1UgCW5J8tqjU3lYw4FBYuj89J0CTVomA7BEfvSZd84GmHko+MxFQU2A==
 
-ci-info@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
-  integrity sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
-
-ci-info@watson/ci-info#f43f6a1cefff47fb361c88cf4b943fdbcaafe540:
+ci-info@^2.0.0, ci-info@watson/ci-info#f43f6a1cefff47fb361c88cf4b943fdbcaafe540:
   version "2.0.0"
   resolved "https://codeload.github.com/watson/ci-info/tar.gz/f43f6a1cefff47fb361c88cf4b943fdbcaafe540"
 
@@ -11123,7 +11118,7 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
-"semantic-release-chrome@github:dword-design/semantic-release-chrome#fork":
+semantic-release-chrome@dword-design/semantic-release-chrome#fork:
   version "0.0.0-development"
   resolved "https://codeload.github.com/dword-design/semantic-release-chrome/tar.gz/e7c5f0a41cf64b6d72c440ae9ac70c3ca216541e"
   dependencies:
@@ -12965,7 +12960,7 @@ web-ext@^4.2.0:
     yargs "15.1.0"
     zip-dir "1.0.2"
 
-"webext-webpack-plugin@github:dword-design/webext-webpack-plugin#fork":
+webext-webpack-plugin@dword-design/webext-webpack-plugin#fork:
   version "0.0.8"
   resolved "https://codeload.github.com/dword-design/webext-webpack-plugin/tar.gz/ea8850fd3697ec57ae5bff4f4f2c551093ac97df"
   dependencies:
