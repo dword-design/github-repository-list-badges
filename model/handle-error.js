@@ -92,8 +92,7 @@ export default error => {
       $form.append($body)
 
       const $message = document.createElement('p')
-      $message.innerHTML =
-        'GitHub API requests are limited to 60 per hour per IP address. By providing a <a href="${accessTokenUrl}" target="_blank">GitHub access token</a>, you can increase the limit to <strong>5.000</strong> requests per hour.'
+      $message.innerHTML = `GitHub API requests are limited to 60 per hour per IP address. By providing a <a href="${accessTokenUrl}" target="_blank">GitHub access token</a>, you can increase the limit to <strong>5.000</strong> requests per hour.`
       $body.append($message)
 
       $body.append($token)

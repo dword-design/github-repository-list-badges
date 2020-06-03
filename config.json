@@ -1,5 +1,5 @@
 {
-  "name": "GitHub Better Repository List",
+  "name": "GitHub Repository List Badges",
   "matches": [
     "https://github.com/*?*tab=repositories*"
   ],
