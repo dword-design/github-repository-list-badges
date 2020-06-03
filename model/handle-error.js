@@ -18,8 +18,8 @@ const getTokenMessage = error => {
   }
 }
 
-export default (error, repositoryName) => {
-  const tokenMessage = getTokenMessage(error, repositoryName)
+export default error => {
+  const tokenMessage = getTokenMessage(error)
   if (tokenMessage) {
     let $flash = document.querySelector('.github-better-repository-list-flash')
     if ($flash) {
