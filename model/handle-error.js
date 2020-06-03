@@ -21,13 +21,13 @@ const getTokenMessage = error => {
 export default error => {
   const tokenMessage = getTokenMessage(error)
   if (tokenMessage) {
-    let $flash = document.querySelector('.github-better-repository-list-flash')
+    let $flash = document.querySelector('.github-repository-list-badges-flash')
     if ($flash) {
       $flash.remove()
     }
     $flash = document.createElement('div')
     $flash.classList.add(
-      'github-better-repository-list-flash',
+      'github-repository-list-badges-flash',
       'flash',
       'flash-error',
       'position-fixed',
@@ -35,6 +35,7 @@ export default error => {
     )
     $flash.style.bottom = '16px'
     $flash.style.right = '16px'
+    $flash.style.maxWidth = 'calc(100% - 32px)'
     $flash.style.zIndex = 33
     $flash.style.padding = 0
     $flash.innerHTML = endent`
@@ -66,6 +67,8 @@ export default error => {
     const $flashButton = document.createElement('button')
     $flashButton.type = 'button'
     $flashButton.style.padding = '16px 40px'
+    $flashButton.style.whiteSpace = 'normal'
+    $flashButton.style.textAlign = 'left'
     $flashButton.classList.add('btn-link', 'text-orange', 'bg-red-light')
     $flashButton.innerText = `GitHub Repository List Badges: ${tokenMessage}`
     $flash.append($flashButton)

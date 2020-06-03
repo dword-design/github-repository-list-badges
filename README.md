@@ -1,9 +1,9 @@
 <!-- TITLE/ -->
-# @dword-design/chrome-extension-github-better-repository-list
+# @dword-design/github-repository-list-badges
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
-[![NPM version](https://img.shields.io/npm/v/@dword-design/chrome-extension-github-better-repository-list.svg)](https://npmjs.org/package/@dword-design/chrome-extension-github-better-repository-list)
+[![NPM version](https://img.shields.io/npm/v/@dword-design/github-repository-list-badges.svg)](https://npmjs.org/package/@dword-design/github-repository-list-badges)
 ![Linux macOS Windows compatible](https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue)
 [![Build status](https://img.shields.io/github/workflow/status/dword-design/github-repository-list-badges/build)](https://github.com/dword-design/github-repository-list-badges/actions)
 [![Coverage status](https://img.shields.io/coveralls/dword-design/github-repository-list-badges)](https://coveralls.io/github/dword-design/github-repository-list-badges)
@@ -22,10 +22,10 @@
 
 ```bash
 # NPM
-$ npm install @dword-design/chrome-extension-github-better-repository-list
+$ npm install @dword-design/github-repository-list-badges
 
 # Yarn
-$ yarn add @dword-design/chrome-extension-github-better-repository-list
+$ yarn add @dword-design/github-repository-list-badges
 ```
 <!-- /INSTALL -->
 

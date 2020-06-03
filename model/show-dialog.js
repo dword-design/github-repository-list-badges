@@ -1,14 +1,14 @@
 import { endent } from '@dword-design/functions'
 
 export default () => {
-  let $dialog = document.querySelector('.github-better-repository-list-dialog')
+  let $dialog = document.querySelector('.github-repository-list-badges-dialog')
   if ($dialog) {
     $dialog.remove()
   }
   $dialog = document.createElement('div')
   $dialog.setAttribute('role', 'dialog')
   $dialog.classList.add(
-    'github-better-repository-list-dialog',
+    'github-repository-list-badges-dialog',
     'Box',
     'Box--overlay',
     'Box-overlay--wide',

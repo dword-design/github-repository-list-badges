@@ -1,2 +1,2 @@
-export const TOKEN_KEY = 'github-better-repository-list-token'
-export const BADGES_CLASS = 'github-better-repository-list-badges'
+export const TOKEN_KEY = 'github-repository-list-badges-token'
+export const BADGES_CLASS = 'github-repository-list-badges-badges'
