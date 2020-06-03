@@ -2,7 +2,7 @@ import { property, compact, map } from '@dword-design/functions'
 import cheerio from 'cheerio'
 import axios from 'axios'
 import micromatch from 'micromatch'
-import { handleError } from '@dword-design/github-extension-utils'
+import { handleError } from '@dword-design/github-web-extension-utils'
 import { TOKEN_KEY, BADGES_CLASS } from './constants'
 import badgeMatches from './badge-matches.json'
 
@@ -45,7 +45,10 @@ export default async name => {
     await ($badges.querySelectorAll('img') |> map(waitForImage) |> Promise.all)
     return $badges
   } catch (error) {
-    handleError(error, { tokenKey: TOKEN_KEY })
+    handleError(error, {
+      name: 'GitHub Repository List Badges',
+      slug: 'github-repository-list-badges',
+    })
   }
   return undefined
 }
