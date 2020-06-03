@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/dword-design/github-repository-list-badges/compare/v1.2.0...v1.3.0) (2020-06-03)
+
+
+### Bug Fixes
+
+* fix unneeded param ([2036386](https://github.com/dword-design/github-repository-list-badges/commit/2036386a2256f477bbdb8209091c0124b60154a0))
+
+
+### Features
+
+* add loading indicator ([cf72b28](https://github.com/dword-design/github-repository-list-badges/commit/cf72b2802636595a84f481860446fd97f6013492))
+
 # [1.2.0](https://github.com/dword-design/github-repository-list-badges/compare/v1.1.0...v1.2.0) (2020-06-03)
 
 
