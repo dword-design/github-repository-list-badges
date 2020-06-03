@@ -7,12 +7,12 @@ const accessTokenUrl = '/settings/tokens/new?scopes=repo'
 const getTokenMessage = error => {
   switch (error.response?.status) {
     case 401:
-      return `The access token is not valid. Create a new <a href="${accessTokenUrl}" target="_blank">GitHub access token</a>.`
+      return 'The access token is not valid.'
     case 403:
       if (error.response.headers['x-ratelimit-remaining'] === '0') {
-        return `API rate limit exceeded for current IP. GitHub API requests are limited to 60 per hour per IP address. By providing a <a href="${accessTokenUrl}" target="_blank">GitHub access token</a>, you can increase the limit to <strong>5.000</strong> requests per hour.`
+        return 'API rate limit exceeded. Please create an access token.'
       }
-      return `You are not allowed to access GitHub API. Create a new <a href="${accessTokenUrl}" target="_blank">GitHub access token</a>.`
+      return 'You are not allowed to access GitHub API. Please create an access token.'
     default:
       return undefined
   }
@@ -67,8 +67,7 @@ export default error => {
     $flashButton.type = 'button'
     $flashButton.style.padding = '16px 40px'
     $flashButton.classList.add('btn-link', 'text-orange', 'bg-red-light')
-    $flashButton.innerText =
-      'Add a GitHub access token for Repository List Badges'
+    $flashButton.innerText = `GitHub Repository List Badges: ${tokenMessage}`
     $flash.append($flashButton)
     $flashButton.onclick = () => {
       const $dialog = showDialog()
@@ -93,7 +92,8 @@ export default error => {
       $form.append($body)
 
       const $message = document.createElement('p')
-      $message.innerHTML = tokenMessage
+      $message.innerHTML =
+        'GitHub API requests are limited to 60 per hour per IP address. By providing a <a href="${accessTokenUrl}" target="_blank">GitHub access token</a>, you can increase the limit to <strong>5.000</strong> requests per hour.'
       $body.append($message)
 
       $body.append($token)
