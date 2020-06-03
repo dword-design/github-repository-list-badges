@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/dword-design/github-repository-list-badges/compare/v1.1.0...v1.2.0) (2020-06-03)
+
+
+### Features
+
+* wait for images ([af31ca7](https://github.com/dword-design/github-repository-list-badges/commit/af31ca7b33a12f157fe823e718adac163c97cf8e))
+
 # [1.1.0](https://github.com/dword-design/github-repository-list-badges/compare/v1.0.3...v1.1.0) (2020-06-03)
 
 
