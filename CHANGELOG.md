@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.1...v1.4.2) (2020-06-04)
+
+
+### Bug Fixes
+
+* delete unneeded icons ([19a2417](https://github.com/dword-design/github-repository-list-badges/commit/19a2417afd20974b52a6525f7a144be09210ea7a))
+
 ## [1.4.1](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.0...v1.4.1) (2020-06-03)
 
 
