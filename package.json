@@ -15,6 +15,7 @@
     "dev": "base dev",
     "prepare": "base prepare",
     "prepublishOnly": "base prepublishOnly",
+    "source": "base source",
     "test": "base test"
   },
   "dependencies": {

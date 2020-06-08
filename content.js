@@ -72,7 +72,7 @@ const run = async () => {
     |> map($headline => $headline.querySelector('a').textContent.trim())
     |> map(getRepositoryBadges)
     |> Promise.all)
-  $badges.forEach(async ($repoBadges, index) => {
+  $badges.forEach(($repoBadges, index) => {
     const $badgesContainer = $headlines[
       index
     ].parentNode.parentNode.querySelector(`.${BADGES_CLASS}`)
