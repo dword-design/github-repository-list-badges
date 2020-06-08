@@ -14,7 +14,7 @@
 <!-- /BADGES -->
 
 <!-- DESCRIPTION/ -->
-
+Displays badges in the GitHub repository list of a user.
 <!-- /DESCRIPTION -->
 
 <!-- INSTALL/ -->
