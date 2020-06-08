@@ -2,7 +2,7 @@
   "name": "@dword-design/github-repository-list-badges",
   "version": "1.4.4",
   "private": true,
-  "description": "",
+  "description": "Displays badges in the GitHub repository list of a user.",
   "repository": "dword-design/github-repository-list-badges",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
