@@ -34,6 +34,7 @@
   },
   "baseConfig": {
     "name": "web-extension",
-    "startUrl": "https://github.com/dword-design?tab=repositories"
+    "startUrl": "https://github.com/dword-design?tab=repositories",
+    "chromeExtensionId": "eahkhdaolahcidlldobhnaepjnfmlbba"
   }
 }
