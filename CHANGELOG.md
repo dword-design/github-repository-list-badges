@@ -1,3 +1,11 @@
+## [1.4.3](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.2...v1.4.3) (2020-06-08)
+
+
+### Bug Fixes
+
+* add chrome extension id ([4aadcab](https://github.com/dword-design/github-repository-list-badges/commit/4aadcab58187b8a7ee1fbf4223dc467c7d48aa72))
+* upgrades ([0fe7aee](https://github.com/dword-design/github-repository-list-badges/commit/0fe7aee074f1abbedd78400f3831af4ee2a7f4ac))
+
 ## [1.4.2](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.1...v1.4.2) (2020-06-04)
 
 
