@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.3...v1.4.4) (2020-06-08)
+
+
+### Bug Fixes
+
+* upgrades ([099d2f3](https://github.com/dword-design/github-repository-list-badges/commit/099d2f3cb2b920cd4b8844dc075d358450c4d464))
+
 ## [1.4.3](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.2...v1.4.3) (2020-06-08)
 
 
