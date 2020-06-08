@@ -1,3 +1,11 @@
+## [1.4.5](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.4...v1.4.5) (2020-06-08)
+
+
+### Bug Fixes
+
+* **config:** Update changed files ([bdbee1c](https://github.com/dword-design/github-repository-list-badges/commit/bdbee1c75591b5dc15bac651e1d399ae832efa51))
+* add description ([442b262](https://github.com/dword-design/github-repository-list-badges/commit/442b262a173281488816d7609cbac5103511275b))
+
 ## [1.4.4](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.3...v1.4.4) (2020-06-08)
 
 
