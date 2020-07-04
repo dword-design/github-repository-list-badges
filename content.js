@@ -1,6 +1,7 @@
-import { map, endent } from '@dword-design/functions'
-import getRepositoryBadges from './model/get-repository-badges'
+import { endent, map } from '@dword-design/functions'
+
 import { BADGES_CLASS } from './model/constants'
+import getRepositoryBadges from './model/get-repository-badges'
 
 const run = async () => {
   let style = document.querySelector('style.github-repository-list-badges')
@@ -49,7 +50,6 @@ const run = async () => {
   `)
   )
   document.getElementsByTagName('head')[0].appendChild(style)
-
   const $headlines = document.querySelectorAll('#user-repositories-list h3')
   $headlines.forEach($headline => {
     const $headlineContainer = $headline.parentNode
@@ -67,7 +67,6 @@ const run = async () => {
     `
     $headlineContainer.after($badges)
   })
-
   const $badges = await ($headlines
     |> map($headline => $headline.querySelector('a').textContent.trim())
     |> map(getRepositoryBadges)
@@ -83,5 +82,4 @@ const run = async () => {
     }
   })
 }
-
 run()

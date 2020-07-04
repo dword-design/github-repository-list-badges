@@ -1,11 +1,11 @@
-import { property, compact, map } from '@dword-design/functions'
-import cheerio from 'cheerio'
-import axios from 'axios'
-import micromatch from 'micromatch'
+import { compact, map, property } from '@dword-design/functions'
 import { handleError } from '@dword-design/github-web-extension-utils'
-import { TOKEN_KEY, BADGES_CLASS } from './constants'
-import badgeMatches from './badge-matches.json'
+import axios from 'axios'
+import cheerio from 'cheerio'
+import micromatch from 'micromatch'
 
+import badgeMatches from './badge-matches.json'
+import { BADGES_CLASS, TOKEN_KEY } from './constants'
 import waitForImage from './wait-for-image'
 
 const token = localStorage.getItem(TOKEN_KEY)
@@ -23,7 +23,6 @@ export default async name => {
       })
       |> await
       |> property('data')
-
     const $ = cheerio.load(readme)
     const $badges = document.createElement('div')
     $badges.classList.add(BADGES_CLASS)
