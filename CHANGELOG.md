@@ -1,3 +1,11 @@
+## [1.4.7](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.6...v1.4.7) (2020-08-23)
+
+
+### Bug Fixes
+
+* build files ([6648c5e](https://github.com/dword-design/github-repository-list-badges/commit/6648c5ef598c3654fc5c8c7f6c7b456aa6519c05))
+* **deps:** update dependency axios to ^0.20.0 ([3ac3083](https://github.com/dword-design/github-repository-list-badges/commit/3ac308350c17ad8712c600866cd6e8ee8adc4625))
+
 ## [1.4.6](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.5...v1.4.6) (2020-07-04)
 
 
