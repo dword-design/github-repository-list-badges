@@ -10,6 +10,7 @@
     "dist"
   ],
   "scripts": {
+    "clean": "base clean",
     "commit": "base commit",
     "dev": "base dev",
     "lint": "base lint",
@@ -21,7 +22,7 @@
   "dependencies": {
     "@dword-design/functions": "^1.1.2",
     "@dword-design/github-web-extension-utils": "^1.1.0",
-    "axios": "^0.19.2",
+    "axios": "^0.20.0",
     "cheerio": "^1.0.0-rc.3",
     "micromatch": "^4.0.2"
   },
