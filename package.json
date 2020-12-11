@@ -1,6 +1,6 @@
 {
   "name": "@dword-design/github-repository-list-badges",
-  "version": "1.4.8",
+  "version": "1.4.9",
   "private": true,
   "description": "Displays badges in the GitHub repository list of a user.",
   "repository": "dword-design/github-repository-list-badges",

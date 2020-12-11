@@ -1,3 +1,10 @@
+## [1.4.9](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.8...v1.4.9) (2020-12-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency axios to ^0.21.0 ([f703648](https://github.com/dword-design/github-repository-list-badges/commit/f7036480056d8ca94e191f83ed7d827af80e640b))
+
 ## [1.4.8](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.7...v1.4.8) (2020-12-11)
 
 
