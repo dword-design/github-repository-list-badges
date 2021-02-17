@@ -10,7 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "clean": "base clean",
+    "check-unknown-files": "base check-unknown-files",
     "commit": "base commit",
     "dev": "base dev",
     "lint": "base lint",
@@ -27,7 +27,7 @@
     "micromatch": "^4.0.2"
   },
   "devDependencies": {
-    "@dword-design/base": "^6.10.2",
+    "@dword-design/base": "^7.0.0",
     "@dword-design/base-config-web-extension": "^1.5.0"
   },
   "publishConfig": {
