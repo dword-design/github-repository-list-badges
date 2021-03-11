@@ -1,5 +1,5 @@
 <!-- TITLE/ -->
-# @dword-design/github-repository-list-badges
+# github-repository-list-badges
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
