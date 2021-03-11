@@ -1,3 +1,11 @@
+## [1.4.12](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.11...v1.4.12) (2021-03-11)
+
+
+### Bug Fixes
+
+* update changed files ([a10b517](https://github.com/dword-design/github-repository-list-badges/commit/a10b5172d7b7c67ead4cf9fd01cc673825ebee36))
+* update package name ([d069897](https://github.com/dword-design/github-repository-list-badges/commit/d0698978fcd5f0f6199d6a03b956f542ed176e58))
+
 ## [1.4.11](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.10...v1.4.11) (2021-03-09)
 
 
