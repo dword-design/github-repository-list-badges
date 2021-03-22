@@ -1,3 +1,10 @@
+## [1.4.14](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.13...v1.4.14) (2021-03-22)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#11](https://github.com/dword-design/github-repository-list-badges/issues/11)) ([f60e717](https://github.com/dword-design/github-repository-list-badges/commit/f60e717c0af699785d0313f5e44b38802dd346ec))
+
 ## [1.4.13](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.12...v1.4.13) (2021-03-17)
 
 
