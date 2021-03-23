@@ -1,3 +1,10 @@
+## [1.4.15](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.14...v1.4.15) (2021-03-23)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/functions to v3 ([#12](https://github.com/dword-design/github-repository-list-badges/issues/12)) ([4cf3601](https://github.com/dword-design/github-repository-list-badges/commit/4cf36013fabd76dd367667505146f03e28d32257))
+
 ## [1.4.14](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.13...v1.4.14) (2021-03-22)
 
 
