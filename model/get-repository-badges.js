@@ -9,7 +9,9 @@ import { BADGES_CLASS, TOKEN_KEY } from './constants'
 import waitForImage from './wait-for-image'
 
 const token = localStorage.getItem(TOKEN_KEY)
+
 const userName = window.location.href.match(/github\.com\/(.*?)\?/)[1]
+
 const github = axios.create({ baseURL: 'https://api.github.com' })
 
 export default async name => {
@@ -23,7 +25,9 @@ export default async name => {
       })
       |> await
       |> property('data')
+
     const $ = cheerio.load(readme)
+
     const $badges = document.createElement('div')
     $badges.classList.add(BADGES_CLASS)
     $badges.innerHTML = $('img')
@@ -36,12 +40,14 @@ export default async name => {
       )
       .map((badgeIndex, badge) => {
         const $link = $(badge).closest('a')
+
         return $link.length > 0 ? $link : $(badge)
       })
       .map((wrapperIndex, wrapper) => $.html(wrapper))
       .get()
       .join('\n')
     await ($badges.querySelectorAll('img') |> map(waitForImage) |> Promise.all)
+
     return $badges
   } catch (error) {
     handleError(error, {
@@ -49,5 +55,6 @@ export default async name => {
       slug: 'github-repository-list-badges',
     })
   }
+
   return undefined
 }
