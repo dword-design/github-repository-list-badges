@@ -50,9 +50,11 @@ const run = async () => {
   `)
   )
   document.getElementsByTagName('head')[0].appendChild(style)
+
   const $headlines = document.querySelectorAll('#user-repositories-list h3')
   $headlines.forEach($headline => {
     const $headlineContainer = $headline.parentNode
+
     const $repository = $headlineContainer.parentNode
     let $badges = $repository.querySelector(`.${BADGES_CLASS}`)
     if ($badges) {
@@ -67,6 +69,7 @@ const run = async () => {
     `
     $headlineContainer.after($badges)
   })
+
   const $badges = await ($headlines
     |> map($headline => $headline.querySelector('a').textContent.trim())
     |> map(getRepositoryBadges)
