@@ -1279,10 +1279,10 @@
     lodash "^4.17.15"
     tinycolor2 "^1.4.1"
 
-"@dword-design/github-web-extension-utils@^1.1.0":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@dword-design/github-web-extension-utils/-/github-web-extension-utils-1.1.6.tgz#12addcdb769df45d655f6735e765aaa6ead0a1cb"
-  integrity sha512-c07hMprNGRGR13cq9bGIbm1nReFyJlzdiN//fGV/XVUn6k27MoG1PpVWlO/h6uD73OmcQ3ggK49M6ml5WnFe9A==
+"@dword-design/github-web-extension-utils@^1.1.6":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@dword-design/github-web-extension-utils/-/github-web-extension-utils-1.1.7.tgz#ab36eba8a820d7220405e521fc5a0ed60946be86"
+  integrity sha512-4omHsP9z+F67ec4y/177sPZ/m+qOa6HXPHX1X10763a4ELNh3eIR03A9zmO04O/SAWCW24b5iU4BMeT6B9CK7g==
   dependencies:
     "@dword-design/functions" "^3.0.0"
 
