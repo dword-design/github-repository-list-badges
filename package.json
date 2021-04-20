@@ -38,5 +38,7 @@
     "name": "@dword-design/web-extension",
     "startUrl": "https://github.com/dword-design?tab=repositories",
     "chromeExtensionId": "eahkhdaolahcidlldobhnaepjnfmlbba"
-  }
+  },
+  "homepage": "",
+  "keywords": []
 }
