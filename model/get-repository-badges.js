@@ -1,11 +1,10 @@
-import { compact, map, property } from '@dword-design/functions'
+import { compact, map, property, some } from '@dword-design/functions'
 import { handleError } from '@dword-design/github-web-extension-utils'
 import axios from 'axios'
 import cheerio from 'cheerio'
-import micromatch from 'micromatch'
 
-import badgeMatches from './badge-matches.json'
 import { BADGES_CLASS, TOKEN_KEY } from './constants'
+import isBadgeUrl from './is-badge-url'
 import waitForImage from './wait-for-image'
 
 const token = localStorage.getItem(TOKEN_KEY)
@@ -33,10 +32,9 @@ export default async name => {
     $badges.innerHTML = $('img')
       .filter(
         (imageIndex, img) =>
-          micromatch(
-            [$(img).attr('data-canonical-src'), $(img).attr('src')] |> compact,
-            badgeMatches
-          ).length > 0
+          [$(img).attr('data-canonical-src'), $(img).attr('src')]
+          |> compact
+          |> some(isBadgeUrl)
       )
       .map((badgeIndex, badge) => {
         const $link = $(badge).closest('a')

@@ -1,10 +1,8 @@
 import { mapValues } from '@dword-design/functions'
-import micromatch from 'micromatch'
 
-import badgeMatches from './badge-matches.json'
+import self from '.'
 
-const runTest = (result, string) => () =>
-  expect(micromatch.isMatch(string, badgeMatches)).toBeTruthy()
+const runTest = (result, string) => () => expect(self(string)).toEqual(result)
 
 export default {
   'https://badge.fury.io/js/safe-require.svg': true,
