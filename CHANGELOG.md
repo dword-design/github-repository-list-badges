@@ -1,3 +1,15 @@
+## [1.4.18](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.17...v1.4.18) (2021-06-21)
+
+
+### Bug Fixes
+
+* tests ([#33](https://github.com/dword-design/github-repository-list-badges/issues/33)) ([0d0b36f](https://github.com/dword-design/github-repository-list-badges/commit/0d0b36f0d29b05c54b2be42625e8f9c19a5a5e99))
+* update config files ([66374ba](https://github.com/dword-design/github-repository-list-badges/commit/66374ba26390cc2a8a79079dbecc6c0f707fa80c))
+* update config files ([b3ad8b0](https://github.com/dword-design/github-repository-list-badges/commit/b3ad8b080d4f5ac9494821804ce89becd0caade2))
+* update dependency @dword-design/base to v8 ([#24](https://github.com/dword-design/github-repository-list-badges/issues/24)) ([6f4d3cd](https://github.com/dword-design/github-repository-list-badges/commit/6f4d3cd66df4352847299704fe205bd9d4f27f5f))
+* update dependency @dword-design/functions to v4 ([#25](https://github.com/dword-design/github-repository-list-badges/issues/25)) ([0d4bc65](https://github.com/dword-design/github-repository-list-badges/commit/0d4bc65b45380cac20b669a5a55e640366978c64))
+* update dependency @dword-design/github-web-extension-utils to v2 ([#26](https://github.com/dword-design/github-repository-list-badges/issues/26)) ([290996c](https://github.com/dword-design/github-repository-list-badges/commit/290996c6944011f335bb019f56f17fe17447b8d4))
+
 ## [1.4.17](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.16...v1.4.17) (2021-04-12)
 
 
