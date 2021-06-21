@@ -1164,12 +1164,12 @@
     "@babel/preset-env" "^7.6.3"
     "@babel/preset-typescript" "^7.13.0"
     "@dword-design/functions" "^4.0.0"
-    "@vue/babel-preset-jsx" dword-design/jsx#fork-babel-preset-jsx
+    "@vue/babel-preset-jsx" "github:dword-design/jsx#fork-babel-preset-jsx"
     babel-plugin-add-module-exports "^1.0.2"
     babel-plugin-macros "^3.0.1"
     babel-plugin-module-resolver "^4.0.0"
     babel-plugin-transform-imports "^2.0.0"
-    babel-plugin-wildcard dword-design/babel-plugin-wildcard#fork
+    babel-plugin-wildcard "github:dword-design/babel-plugin-wildcard#fork"
     depcheck-package-name "^2.0.0"
     find-up "^5.0.0"
     param-case "^3.0.3"
@@ -1193,9 +1193,9 @@
     std-env "^2.3.0"
 
 "@dword-design/base-config-web-extension@^1.5.0":
-  version "1.10.30"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-web-extension/-/base-config-web-extension-1.10.30.tgz#dab34325868a9369be1bff15007e7b75eeaf3036"
-  integrity sha512-hX85Q0+Ji50SJ1APb/e/g84VHM5TaW4yBJEWvWIWCzHFpyg44U50PxBLBBdeDQa93u3/4WlkqpJpuA5zjsARTw==
+  version "1.10.31"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-config-web-extension/-/base-config-web-extension-1.10.31.tgz#8e0be6215bb0b1edf704ca4d18d354ab9941c8df"
+  integrity sha512-8PdvA0uwJgwOYiSJV9oE4xjoNsgITAzyGjAFMMB2NJ/XZIhuoORgdxRyTyc7jYxaISiGh7PRPx03eebLdIjikA==
   dependencies:
     "@dword-design/depcheck-parser-sass" "^2.0.0"
     "@dword-design/eslint-config" "^2.0.0"
@@ -1212,7 +1212,7 @@
     node-sass "^6.0.0"
     raw-loader "^4.0.1"
     sass-loader "^12.0.0"
-    semantic-release-chrome dword-design/semantic-release-chrome#fork
+    semantic-release-chrome "github:dword-design/semantic-release-chrome#fork"
     webext-webpack-plugin "^0.0.11"
     webextension-polyfill "^0.8.0"
     webpack "^5.33.2"
@@ -1286,9 +1286,9 @@
     make-cli "^2.0.0"
 
 "@dword-design/depcheck-parser-sass@^2.0.0":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@dword-design/depcheck-parser-sass/-/depcheck-parser-sass-2.0.7.tgz#3367245d5a252897e85938db4dae7b4461f3b453"
-  integrity sha512-m8yW3Xdllqv+3l1SaslIudT1kqFNGcIraU0fm9HRiQ2Q8LLQ+6QCNODXcv2YsXzmCEIpEfTROVtIuW6OW61C4g==
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@dword-design/depcheck-parser-sass/-/depcheck-parser-sass-2.0.8.tgz#200da6120b38cb00471330acc0b0cf09a21e281c"
+  integrity sha512-X7lWY+DXow7BZ1LqfHH2G4K8wY2cb/nhi1HIVzcupyHtq1tjmseyD6YCYVBj6eAl8ZTDQMYA3KZjau1BzQ+0+Q==
   dependencies:
     "@dword-design/functions" "^4.0.0"
     get-package-name "^2.0.0"
@@ -1332,19 +1332,19 @@
     babel-plugin-module-resolver "^4.0.0"
 
 "@dword-design/functions@^4.0.0":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-4.0.3.tgz#8f9b4c65ba8b3bbe5ebf6766bb21b894335ce309"
-  integrity sha512-pIUXdHeV5G4dKwTcAhJcz8hV3B+IxYUBCpoyeYVhTVjidoJ7zxNnpe7fuLQ+yprdzFHllLlnlhixtVLXZY/cGA==
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-4.0.4.tgz#e2622b341a03c4b8e46826b536c5393e1b391a9f"
+  integrity sha512-LmuqKZCd1iDCcmvwdMUTwbC3uAnaTY5aNtAu2O/bee2t+pRwy40LyWW+jzMMFQ+y42DD90oI2w8gxj0VmANxSw==
   dependencies:
     delay "^5.0.0"
-    endent dword-design/endent#fork
+    endent "github:dword-design/endent#fork"
     lodash "^4.17.15"
     tinycolor2 "^1.4.1"
 
 "@dword-design/github-web-extension-utils@^2.0.0":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@dword-design/github-web-extension-utils/-/github-web-extension-utils-2.0.2.tgz#f9dcad3363b5cb73b0635dff1bd5aa1812839864"
-  integrity sha512-FzrkzzdLDpIDQ/m8SfVXwKQuwKNwP/z6clNgXmG4hLfRGmyNWhGC+upJqsAutBWtUuiSAo2Hb1oaBNWaS8JiGw==
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@dword-design/github-web-extension-utils/-/github-web-extension-utils-2.0.3.tgz#90137cee0cf002dabac6de55412722c01944fa8a"
+  integrity sha512-sg7SnhSBcMjdtPGv4eGRTkgUunY8p9nTAsi9T5/B7gkO2jfAdl+q3Wm2ieqBWDb40zYB1Hxn3F8gcn5ocH2U1g==
   dependencies:
     "@dword-design/functions" "^4.0.0"
 
@@ -1361,7 +1361,7 @@
   integrity sha512-+PoteHnaMOyzzsUgrZ/q3wh3/+FfMMThzGQH9XKX/Vab+pFQzn0cibKbkiR+7Vhj0EtuwLpCbQP8nblqWrUC2A==
   dependencies:
     is-docker "^2.2.1"
-    puppeteer-to-istanbul dword-design/puppeteer-to-istanbul#fork
+    puppeteer-to-istanbul "github:dword-design/puppeteer-to-istanbul#fork"
     xvfb "^0.4.0"
 
 "@dword-design/tester@^2.0.5":
@@ -2019,8 +2019,9 @@
     lodash.kebabcase "^4.1.1"
     svg-tags "^1.0.0"
 
-"@vue/babel-preset-jsx@dword-design/jsx#fork-babel-preset-jsx":
+"@vue/babel-preset-jsx@github:dword-design/jsx#fork-babel-preset-jsx":
   version "1.1.2"
+  uid a73cb9961541a60a66b1b99a69a32e00bc66d336
   resolved "https://codeload.github.com/dword-design/jsx/tar.gz/a73cb9961541a60a66b1b99a69a32e00bc66d336"
   dependencies:
     "@vue/babel-helper-vue-jsx-merge-props" "^1.0.0"
@@ -2039,6 +2040,7 @@
 
 "@vue/babel-sugar-inject-h@dword-design/jsx#fork-babel-sugar-inject-h":
   version "1.1.2"
+  uid cc36a2200c059120f37944615fb2ec0e22f8f3cc
   resolved "https://codeload.github.com/dword-design/jsx/tar.gz/cc36a2200c059120f37944615fb2ec0e22f8f3cc"
   dependencies:
     "@babel/plugin-syntax-jsx" "^7.2.0"
@@ -2881,8 +2883,9 @@ babel-plugin-transform-imports@^2.0.0:
     "@babel/types" "^7.4"
     is-valid-path "^0.1.1"
 
-babel-plugin-wildcard@dword-design/babel-plugin-wildcard#fork:
+"babel-plugin-wildcard@github:dword-design/babel-plugin-wildcard#fork":
   version "6.0.0"
+  uid "691d11923ee2dcf63e86f205b0a2c998883e3a3c"
   resolved "https://codeload.github.com/dword-design/babel-plugin-wildcard/tar.gz/691d11923ee2dcf63e86f205b0a2c998883e3a3c"
   dependencies:
     rimraf "^2.6.2"
@@ -4125,6 +4128,7 @@ decompress-response@^3.3.0:
 
 dedent@0.7.0, dedent@dword-design/dedent#fork:
   version "0.7.0"
+  uid c8d46e5017d60504657c2d01b59082c0329a12a7
   resolved "https://codeload.github.com/dword-design/dedent/tar.gz/c8d46e5017d60504657c2d01b59082c0329a12a7"
   dependencies:
     babel-plugin-add-module-exports "^1.0.2"
@@ -4536,8 +4540,9 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0, end-of-stream@^1.4.1, end-of-stream@
   dependencies:
     once "^1.4.0"
 
-endent@dword-design/endent#fork:
+"endent@github:dword-design/endent#fork":
   version "1.4.0"
+  uid be5433db67eaec07c6c9d00ba3bed2ed946dc664
   resolved "https://codeload.github.com/dword-design/endent/tar.gz/be5433db67eaec07c6c9d00ba3bed2ed946dc664"
   dependencies:
     dedent dword-design/dedent#fork
@@ -5916,22 +5921,10 @@ globby@10.0.0:
     merge2 "^1.2.3"
     slash "^3.0.0"
 
-globby@^11.0.0, globby@^11.0.1:
+globby@^11.0.0, globby@^11.0.1, globby@^11.0.3:
   version "11.0.4"
   resolved "https://registry.yarnpkg.com/globby/-/globby-11.0.4.tgz#2cbaff77c2f2a62e71e9b2813a67b97a3a3001a5"
   integrity sha512-9O4MVG9ioZJ08ffbcyVYyLOJLk5JQ688pJ4eMGLpdWLHq/Wr1D9BlriLQyL0E+jbkuePVZXYFj47QM/v093wHg==
-  dependencies:
-    array-union "^2.1.0"
-    dir-glob "^3.0.1"
-    fast-glob "^3.1.1"
-    ignore "^5.1.4"
-    merge2 "^1.3.0"
-    slash "^3.0.0"
-
-globby@^11.0.3:
-  version "11.0.3"
-  resolved "https://registry.yarnpkg.com/globby/-/globby-11.0.3.tgz#9b1f0cb523e171dd1ad8c7b2a9fb4b644b9593cb"
-  integrity sha512-ffdmosjA807y7+lA1NM0jELARVmYul/715xiILEjo3hBLPTcirgQNnXECn5g3mtR8TOLCVbkfua1Hpen25/Xcg==
   dependencies:
     array-union "^2.1.0"
     dir-glob "^3.0.1"
@@ -9093,9 +9086,9 @@ object.values@^1.1.1, object.values@^1.1.4:
     es-abstract "^1.18.2"
 
 objectorarray@^1.0.3:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/objectorarray/-/objectorarray-1.0.4.tgz#d69b2f0ff7dc2701903d308bb85882f4ddb49483"
-  integrity sha512-91k8bjcldstRz1bG6zJo8lWD7c6QXcB4nTDUqiEvIL1xAsLoZlOOZZG+nd6YPz+V7zY1580J4Xxh1vZtyv4i/w==
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/objectorarray/-/objectorarray-1.0.5.tgz#2c05248bbefabd8f43ad13b41085951aac5e68a5"
+  integrity sha512-eJJDYkhJFFbBBAxeh8xW+weHlkI28n2ZdQV/J/DNfWfSKlGEf2xcfAbZTv3riEXHAhL9SVOTs2pRmXiSTf78xg==
 
 once@^1.3.0, once@^1.3.1, once@^1.4.0:
   version "1.4.0"
@@ -9921,8 +9914,9 @@ pupa@^2.1.1:
   dependencies:
     escape-goat "^2.0.0"
 
-puppeteer-to-istanbul@dword-design/puppeteer-to-istanbul#fork:
+"puppeteer-to-istanbul@github:dword-design/puppeteer-to-istanbul#fork":
   version "1.4.0"
+  uid bf9e82538230872bffe68b28c40ec70731afd89a
   resolved "https://codeload.github.com/dword-design/puppeteer-to-istanbul/tar.gz/bf9e82538230872bffe68b28c40ec70731afd89a"
   dependencies:
     clone "^2.1.2"
@@ -10627,8 +10621,9 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
-semantic-release-chrome@dword-design/semantic-release-chrome#fork:
+"semantic-release-chrome@github:dword-design/semantic-release-chrome#fork":
   version "0.0.0-development"
+  uid e7c5f0a41cf64b6d72c440ae9ac70c3ca216541e
   resolved "https://codeload.github.com/dword-design/semantic-release-chrome/tar.gz/e7c5f0a41cf64b6d72c440ae9ac70c3ca216541e"
   dependencies:
     "@semantic-release/error" "2.2.0"
@@ -12192,9 +12187,9 @@ webpack-sources@^2.3.0:
     source-map "^0.6.1"
 
 webpack@^5.33.2:
-  version "5.38.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.38.1.tgz#5224c7f24c18e729268d3e3bc97240d6e880258e"
-  integrity sha512-OqRmYD1OJbHZph6RUMD93GcCZy4Z4wC0ele4FXyYF0J6AxO1vOSuIlU1hkS/lDlR9CDYBz64MZRmdbdnFFoT2g==
+  version "5.39.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.39.1.tgz#d1e014b6d71e1aef385316ad528f21cd5b1f9784"
+  integrity sha512-ulOvoNCh2PvTUa+zbpRuEb1VPeQnhxpnHleMPVVCq3QqnaFogjsLyps+o42OviQFoaGtTQYrUqDXu1QNkvUPzw==
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.47"
