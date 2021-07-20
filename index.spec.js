@@ -14,9 +14,11 @@ export default tester(
       const repositoriesList = await this.page.waitForSelector(
         '#user-repositories-list'
       )
-      await repositoriesList.$$eval('relative-time', els =>
-        els.forEach(el => (el.innerText = 'today'))
-      )
+      await repositoriesList.$$eval('relative-time', els => {
+        for (const el of els) {
+          el.innerText = 'today'
+        }
+      })
       expect(await repositoriesList.screenshot()).toMatchImageSnapshot(this)
     },
   },
