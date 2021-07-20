@@ -52,7 +52,7 @@ const run = async () => {
   document.getElementsByTagName('head')[0].appendChild(style)
 
   const $headlines = document.querySelectorAll('#user-repositories-list h3')
-  $headlines.forEach($headline => {
+  for (const $headline of $headlines) {
     const $headlineContainer = $headline.parentNode
 
     const $repository = $headlineContainer.parentNode
@@ -68,13 +68,15 @@ const run = async () => {
       </div></div>
     `
     $headlineContainer.after($badges)
-  })
+  }
 
   const $badges = await ($headlines
     |> map($headline => $headline.querySelector('a').textContent.trim())
     |> map(getRepositoryBadges)
     |> Promise.all)
-  $badges.forEach(($repoBadges, index) => {
+  for (let index = 0; index < $badges.length; index += 1) {
+    const $repoBadges = $badges[index]
+
     const $badgesContainer = $headlines[
       index
     ].parentNode.parentNode.querySelector(`.${BADGES_CLASS}`)
@@ -83,6 +85,6 @@ const run = async () => {
     } else {
       $badgesContainer.remove()
     }
-  })
+  }
 }
 run()
