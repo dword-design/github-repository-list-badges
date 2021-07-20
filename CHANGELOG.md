@@ -1,3 +1,11 @@
+## [1.4.23](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.22...v1.4.23) (2021-07-20)
+
+
+### Bug Fixes
+
+* lock file maintenance ([79c9dd0](https://github.com/dword-design/github-repository-list-badges/commit/79c9dd0038e45a3f3de5bbeb32636a7eb643c66d))
+* replace forEach with for of ([715175c](https://github.com/dword-design/github-repository-list-badges/commit/715175c81de00a85cff2f6c1e4227d7d3995880e))
+
 ## [1.4.22](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.21...v1.4.22) (2021-07-15)
 
 

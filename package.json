@@ -1,6 +1,6 @@
 {
   "name": "github-repository-list-badges",
-  "version": "1.4.22",
+  "version": "1.4.23",
   "private": true,
   "description": "Displays badges in the GitHub repository list of a user.",
   "repository": "dword-design/github-repository-list-badges",
