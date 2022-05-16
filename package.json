@@ -24,7 +24,7 @@
   "dependencies": {
     "@dword-design/functions": "^4.0.0",
     "@dword-design/github-web-extension-utils": "^2.0.0",
-    "axios": "^0.21.0",
+    "axios": "^0.27.0",
     "cheerio": "^1.0.0-rc.3"
   },
   "devDependencies": {
