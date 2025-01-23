@@ -1380,9 +1380,9 @@
     tinycolor2 "^1.4.1"
 
 "@dword-design/github-web-extension-utils@^2.0.0":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@dword-design/github-web-extension-utils/-/github-web-extension-utils-2.0.5.tgz#21d15220ea0083bbd2d045b586e7efee2f80fe11"
-  integrity sha512-UJfZi9CX4UxMePO4el8In9RJM8tK2sjXcJSBZxK8eVuBxWRGyXogTqHjkfCiDTdogTCi36Fqbj8jcAP1zV1+hg==
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@dword-design/github-web-extension-utils/-/github-web-extension-utils-2.0.8.tgz#4c6a1b7d7c27cca67d1bb5158e7a54b56dc26352"
+  integrity sha512-qvg+buCXuXyjVSp4UgGwla1GlmA+Il7yYz1bPczoM3bK65EjugeI+3zgI0LgXFUosZWPIQHW4SkdOCuxmaSLVw==
   dependencies:
     "@dword-design/functions" "^4.0.0"
 
