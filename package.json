@@ -31,7 +31,8 @@
     "axios": "^1.13.2",
     "cheerio": "^1.0.0-rc.3",
     "endent": "npm:@dword-design/endent@^1.4.7",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "p-wait-for": "^6.0.0"
   },
   "devDependencies": {
     "@dword-design/base": "^16",

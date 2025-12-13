@@ -1,4 +1,5 @@
 import endent from 'endent';
+import pWaitFor from 'p-wait-for';
 
 export default defineContentScript({
   main: async () => {
@@ -54,7 +55,21 @@ export default defineContentScript({
     );
 
     document.querySelectorAll('head')[0].append(style);
-    await new Promise(resolve => setTimeout(resolve, 1000)); // TODO: Before the links in the titles are missing
+
+    // Wait until all headlines have their <a> tags loaded
+    await pWaitFor(
+      () => {
+        const $headlines = document.querySelectorAll(
+          '#user-repositories-list h3',
+        );
+
+        return [...$headlines].every(
+          $headline => $headline.querySelector('a') !== null,
+        );
+      },
+      { interval: 100 },
+    );
+
     const $headlines = document.querySelectorAll('#user-repositories-list h3');
 
     for (const $headline of $headlines) {
