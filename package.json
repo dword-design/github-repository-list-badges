@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@dword-design/github-web-extension-utils": "^4.0.0",
+    "@wxt-dev/auto-icons": "^1.1.0",
     "axios": "^1.13.2",
     "cheerio": "^1.0.0-rc.3",
     "endent": "npm:@dword-design/endent@^1.4.7",

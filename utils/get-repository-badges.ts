@@ -3,10 +3,6 @@ import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { compact } from 'lodash-es';
 
-import { BADGES_CLASS, TOKEN_KEY } from './constants';
-import isBadgeUrl from './is-badge-url';
-import waitForImage from './wait-for-image';
-
 const token = localStorage.getItem(TOKEN_KEY);
 const userName = globalThis.location.href.match(/github\.com\/(.*?)\?/)![1];
 const github = axios.create({ baseURL: 'https://api.github.com' });

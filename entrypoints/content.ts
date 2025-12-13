@@ -54,6 +54,7 @@ export default defineContentScript({
     );
 
     document.querySelectorAll('head')[0].append(style);
+    await new Promise(resolve => setTimeout(resolve, 1000)); // TODO: Before the links in the titles are missing
     const $headlines = document.querySelectorAll('#user-repositories-list h3');
 
     for (const $headline of $headlines) {
@@ -86,7 +87,7 @@ export default defineContentScript({
     for (const [index, $repoBadges] of $badges.entries()) {
       const $badgesContainer = $headlines[
         index
-      ]!.parentNode!.parentNode!.querySelector(`.${BADGES_CLASS}`)!;
+      ]!.parentNode!.parentNode!.querySelector('.' + BADGES_CLASS)!;
 
       if ($repoBadges) {
         $badgesContainer.replaceWith($repoBadges);
