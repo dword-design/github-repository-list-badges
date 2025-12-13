@@ -1,7 +1,13 @@
-export default img =>
+export default (img: HTMLImageElement) =>
   img.complete
     ? undefined
-    : new Promise(resolve => {
-        img.addEventListener('load', resolve);
-        img.onerror = resolve;
+    : new Promise<void>(resolve => {
+        const handleComplete = () => {
+          img.removeEventListener('load', handleComplete);
+          img.removeEventListener('error', handleComplete);
+          resolve();
+        };
+
+        img.addEventListener('load', handleComplete);
+        img.addEventListener('error', handleComplete);
       });

@@ -57,7 +57,7 @@ export default defineContentScript({
     const $headlines = document.querySelectorAll('#user-repositories-list h3');
 
     for (const $headline of $headlines) {
-      const $headlineContainer = $headline.parentNode!;
+      const $headlineContainer = $headline.parentNode as HTMLElement;
       const $repository = $headlineContainer.parentNode!;
       let $badges = $repository.querySelector(`.${BADGES_CLASS}`);
 

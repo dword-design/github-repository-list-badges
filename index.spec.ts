@@ -1,10 +1,8 @@
 import { test } from '@dword-design/playwright-fixture-web-extension';
 import { expect } from '@playwright/test';
-import execa from 'execa';
+import { execaCommand } from 'execa';
 
-test.beforeAll(() =>
-  execa.command('base prepublishOnly', { stdio: 'inherit' }),
-);
+test.beforeAll(() => execaCommand('base prepublishOnly', { stdio: 'inherit' }));
 
 test('works', async ({ page }) => {
   await page.goto(
