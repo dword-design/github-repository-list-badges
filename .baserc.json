@@ -1,0 +1,8 @@
+{
+  "depcheckConfig": {
+    "ignoreMatches": ["@playwright/browser-chromium"]
+  },
+  "name": "@dword-design/web-extension",
+  "startUrl": "https://github.com/dword-design?tab=repositories",
+  "testInContainer": true
+}

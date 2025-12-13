@@ -7,44 +7,48 @@
   "funding": "https://github.com/sponsors/dword-design",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@sebastianlandwehr.com>",
+  "type": "module",
   "files": [
     "dist"
   ],
   "scripts": {
+    "build": "base build",
     "checkUnknownFiles": "base checkUnknownFiles",
     "commit": "base commit",
+    "depcheck": "base depcheck",
     "dev": "base dev",
     "lint": "base lint",
     "prepare": "base prepare",
     "prepublishOnly": "base prepublishOnly",
-    "source": "base source",
     "test": "base test",
-    "test:raw": "base test:raw"
+    "test:raw": "base test:raw",
+    "typecheck": "base typecheck",
+    "verify": "base verify"
   },
   "dependencies": {
-    "@dword-design/functions": "^4.0.0",
-    "@dword-design/github-web-extension-utils": "^2.0.0",
-    "axios": "^0.21.0",
-    "cheerio": "^1.0.0-rc.3"
+    "@dword-design/github-web-extension-utils": "^4.0.0",
+    "axios": "^1.13.2",
+    "cheerio": "^1.0.0-rc.3",
+    "endent": "npm:@dword-design/endent@^1.4.7",
+    "lodash-es": "^4.17.21"
   },
   "devDependencies": {
-    "@dword-design/base": "^8.0.0",
-    "@dword-design/base-config-web-extension": "^1.5.0",
-    "@dword-design/puppeteer": "^5.0.3",
-    "@dword-design/tester": "^2.0.5",
-    "@dword-design/tester-plugin-puppeteer": "^2.1.17",
-    "execa": "^5.1.1"
+    "@dword-design/base": "^16",
+    "@dword-design/base-config-web-extension": "^5",
+    "@dword-design/playwright-fixture-web-extension": "^1.1.0",
+    "@playwright/browser-chromium": "^1.57.0",
+    "@playwright/test": "^1.57.0",
+    "@types/lodash-es": "^4.17.12",
+    "execa": "^9.6.1"
   },
+  "peerDependencies": {
+    "@dword-design/wxt-fork": "*"
+  },
+  "packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501",
   "engines": {
-    "node": ">=12"
+    "node": ">=22"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "baseConfig": {
-    "name": "@dword-design/web-extension",
-    "startUrl": "https://github.com/dword-design?tab=repositories",
-    "chromeExtensionId": "eahkhdaolahcidlldobhnaepjnfmlbba",
-    "testInContainer": true
   }
 }
