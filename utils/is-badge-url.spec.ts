@@ -1,10 +1,16 @@
-import { mapValues } from '@dword-design/functions'
+import { expect, test } from '@playwright/test';
+import { createUnimport, installGlobalAutoImports } from 'unimport';
 
-import self from '.'
+import self from './is-badge-url';
 
-const runTest = (result, string) => () => expect(self(string)).toEqual(result)
+test.beforeAll(async () => {
+  const unimport = createUnimport({ dirs: ['./utils'] });
+  await unimport.init();
+  console.log(await unimport.getImports());
+  await installGlobalAutoImports(unimport);
+});
 
-export default {
+const tests = {
   'https://badge.fury.io/js/safe-require.svg': true,
   'https://ci.appveyor.com/api/projects/status/xbooh370dinuyi0y/branch/master?svg=true': true,
   'https://codecov.io/gh/potato4d/nuxt-basic-auth-module/branch/master/graph/badge.svg': true,
@@ -19,4 +25,8 @@ export default {
   'https://opencollective.com/depcheck/all/badge.svg?label=financial+contributors': true,
   'https://snyk.io/test/github/nuxt-community/nuxt-i18n/badge.svg?style=flat-square': true,
   'https://travis-ci.org/depcheck/depcheck.svg?branch=master': true,
-} |> mapValues(runTest)
+};
+
+for (const [string, result] of Object.entries(tests)) {
+  test(string, () => expect(self(string)).toEqual(result));
+}
