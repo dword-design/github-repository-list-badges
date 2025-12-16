@@ -1,3 +1,11 @@
+## [1.4.27](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.26...v1.4.27) (2025-12-16)
+
+
+### Bug Fixes
+
+* trigger release ([698f33f](https://github.com/dword-design/github-repository-list-badges/commit/698f33f6cebb78ce114af795aa9189a7bec213bc))
+* trigger release ([7b1f18f](https://github.com/dword-design/github-repository-list-badges/commit/7b1f18f21c9f4f12ab935e15fdbc09ab71ad7811))
+
 ## [1.4.26](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.25...v1.4.26) (2025-12-16)
 
 
