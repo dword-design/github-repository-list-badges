@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@dword-design/base": "^16",
-    "@dword-design/base-config-web-extension": "^5",
+    "@dword-design/base-config-web-extension": "^5.1.2",
     "@dword-design/playwright-fixture-web-extension": "^1.1.0",
     "@playwright/browser-chromium": "^1.57.0",
     "@playwright/test": "^1.57.0",

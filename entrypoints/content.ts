@@ -102,7 +102,7 @@ export default defineContentScript({
     for (const [index, $repoBadges] of $badges.entries()) {
       const $badgesContainer = $headlines[
         index
-      ]!.parentNode!.parentNode!.querySelector('.' + BADGES_CLASS)!;
+      ]!.parentNode!.parentNode!.querySelector(`.${BADGES_CLASS}`)!;
 
       if ($repoBadges) {
         $badgesContainer.replaceWith($repoBadges);
