@@ -3,11 +3,12 @@ import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { compact } from 'lodash-es';
 
-const token = localStorage.getItem(TOKEN_KEY);
-const userName = globalThis.location.href.match(/github\.com\/(.*?)\?/)![1];
 const github = axios.create({ baseURL: 'https://api.github.com' });
 
 export default async (name: string) => {
+  const token = localStorage.getItem(TOKEN_KEY);
+  const userName = globalThis.location.href.match(/github\.com\/(.*?)\?/)![1];
+
   try {
     const { data: readme } = await github.get(
       `/repos/${userName}/${name}/readme`,

@@ -1,6 +1,14 @@
 import { expect, test } from '@playwright/test';
+import { createUnimport, installGlobalAutoImports } from 'unimport';
 
 import self from './is-badge-url';
+
+test.beforeAll(async () => {
+  const unimport = createUnimport({ dirs: ['./utils'] });
+  await unimport.init();
+  console.log(await unimport.getImports());
+  await installGlobalAutoImports(unimport);
+});
 
 const tests = {
   'https://badge.fury.io/js/safe-require.svg': true,
