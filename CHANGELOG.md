@@ -1,3 +1,10 @@
+## [1.4.26](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.25...v1.4.26) (2025-12-16)
+
+
+### Bug Fixes
+
+* foo ([8977698](https://github.com/dword-design/github-repository-list-badges/commit/8977698b546fab72811dd3dd457eb9df21b8dd7f))
+
 ## [1.4.25](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.24...v1.4.25) (2025-12-16)
 
 
