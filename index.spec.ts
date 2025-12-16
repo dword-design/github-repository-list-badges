@@ -1,6 +1,7 @@
 import { test } from '@dword-design/playwright-fixture-web-extension';
 import { expect } from '@playwright/test';
 import { execaCommand } from 'execa';
+import { range } from 'lodash-es';
 
 test.beforeAll(() => execaCommand('base prepublishOnly', { stdio: 'inherit' }));
 
@@ -14,17 +15,15 @@ test('works', async ({ page }) => {
   const repositoryItems = repositoriesList.locator('li');
   const count = await repositoryItems.count();
 
-  for (let i = 0; i < count; i++) {
-    const item = repositoryItems.nth(i);
-    await expect(item.locator('h3 .Label')).toBeVisible();
-    await expect(item.locator('relative-time')).toBeVisible();
-  }
-
-  await repositoriesList.locator('relative-time').evaluateAll(els => {
-    for (const el of els) {
-      el.textContent = 'today';
-    }
-  });
+  await Promise.all(
+    range(count).flatMap(index => {
+      const item = repositoryItems.nth(index);
+      return [
+        expect(item.locator('h3 .Label')).toBeVisible(),
+        expect(item.locator('relative-time')).toBeVisible(),
+      ];
+    }),
+  );
 
   await expect(repositoriesList).toHaveScreenshot({
     mask: [repositoriesList.locator('li relative-time')],
