@@ -11,6 +11,14 @@ test('works', async ({ page }) => {
 
   const repositoriesList = page.locator('#user-repositories-list');
   await expect(repositoriesList).toBeAttached();
+  const repositoryItems = repositoriesList.locator('li');
+  const count = await repositoryItems.count();
+
+  for (let i = 0; i < count; i++) {
+    const item = repositoryItems.nth(i);
+    await expect(item.locator('h3 .Label')).toBeVisible();
+    await expect(item.locator('relative-time')).toBeVisible();
+  }
 
   await repositoriesList.locator('relative-time').evaluateAll(els => {
     for (const el of els) {
@@ -18,5 +26,7 @@ test('works', async ({ page }) => {
     }
   });
 
-  await expect(repositoriesList).toHaveScreenshot();
+  await expect(repositoriesList).toHaveScreenshot({
+    mask: [repositoriesList.locator('li relative-time')],
+  });
 });
