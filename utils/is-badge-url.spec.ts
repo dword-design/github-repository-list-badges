@@ -6,7 +6,6 @@ import self from './is-badge-url';
 test.beforeAll(async () => {
   const unimport = createUnimport({ dirs: ['./utils'] });
   await unimport.init();
-  console.log(await unimport.getImports());
   await installGlobalAutoImports(unimport);
 });
 
