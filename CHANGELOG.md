@@ -1,3 +1,11 @@
+## [1.4.29](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.28...v1.4.29) (2026-01-04)
+
+
+### Bug Fixes
+
+* delete console.log ([e56d6fd](https://github.com/dword-design/github-repository-list-badges/commit/e56d6fdabcc20dd79d7b8f1f3982d8b646c39424))
+* lock file maintenance ([#60](https://github.com/dword-design/github-repository-list-badges/issues/60)) ([802412a](https://github.com/dword-design/github-repository-list-badges/commit/802412a73b160c09134def717fbb092d06c62b73))
+
 ## [1.4.28](https://github.com/dword-design/github-repository-list-badges/compare/v1.4.27...v1.4.28) (2025-12-22)
 
 
