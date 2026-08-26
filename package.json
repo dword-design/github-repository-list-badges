@@ -40,7 +40,7 @@
     "@playwright/browser-chromium": "^1.57.0",
     "@playwright/test": "^1.57.0",
     "@types/lodash-es": "^4.17.12",
-    "execa": "^9.6.1"
+    "execa": "^10.0.0"
   },
   "peerDependencies": {
     "@dword-design/wxt-fork": "*",
