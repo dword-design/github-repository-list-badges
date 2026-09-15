@@ -34,7 +34,7 @@
     "p-wait-for": "^6.0.0"
   },
   "devDependencies": {
-    "@dword-design/base": "^16",
+    "@dword-design/base": "^17.0.0",
     "@dword-design/base-config-web-extension": "^5.1.2",
     "@dword-design/playwright-fixture-web-extension": "^1.1.0",
     "@playwright/browser-chromium": "^1.57.0",
